@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GlowBeauty - Toko Makeup</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', sans-serif;
+            background-color: #fff0f5;
+            color: #333;
+        }
+        header {
+            background-color: #ffb6c1;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            margin-top: 10px;
+        }
+        nav a {
+            margin: 0 15px;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .hero {
+            background-color: #ffe4e1;
+            padding: 50px 20px;
+            text-align: center;
+        }
+        .hero h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+        .container {
+            padding: 30px 20px;
+        }
+        .product-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        .product {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+            width: 250px;
+            padding: 15px;
+            text-align: center;
+        }
+        .product img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+        .product h3 {
+            margin: 10px 0 5px;
+            font-size: 18px;
+        }
+        .product p {
+            color: #777;
+            font-size: 14px;
+        }
+        .product button {
+            background-color: #ff69b4;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        .product button:hover {
+            background-color: #ff1493;
+        }
+        footer {
+            background-color: #ffe4e1;
+            text-align: center;
+            padding: 15px;
+            margin-top: 40px;
+            color: #333;
+        }
+        @media (max-width: 600px) {
+            .product-grid {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>GlowBeauty</h1>
+        <img src="logo.jpg" alt="Logo Toko" width="150mm" height="150mm">
+        <nav>
+            <a href="#">Beranda</a>
+            <a href="#">Produk</a>
+            <a href="#">Tentang Kami</a>
+            <a href="#">Kontak</a>
+        </nav>
+    </header>
+
+    <div class="hero">
+        <h1>Temukan Kecantikanmu</h1>
+        <p>Makeup pilihan untuk tampil lebih percaya diri</p>
+    </div>
+
+    <div class="container">
+        <h2 style="text-align:center;">Produk Terlaris</h2>
+        <div class="product-grid">
+            <div class="product">
+                <img src="lipstick.jpg" alt="Lipstick">
+                <h3>Glow Lipstick</h3>
+                <p>Warna tahan lama dan lembut di bibir.</p>
+                <button>Tambah ke Keranjang</button>
+            </div>
+            <div class="product">
+                <img src="fondation.png" alt="Foundation">
+                <h3>Silky Foundation</h3>
+                <p>Memberi tampilan halus dan natural.</p>
+                <button>Tambah ke Keranjang</button>
+            </div>
+            <div class="product">
+                <img src="baked blush 2.jpg" alt="Blush">
+                <h3>Rosy Blush</h3>
+                <p>Warna pipi cerah alami sepanjang hari.</p>
+                <button>Tambah ke Keranjang</button>
+            </div>
+            <div class="product">
+                <img src="eyeshadow.jpeg" alt="Eyeshadow">
+                <h3>Palette Eyeshadow</h3>
+                <p>Warna-warna cantik untuk berbagai gaya.</p>
+                <button>Tambah ke Keranjang</button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2025 GlowBeauty. Semua hak dilindungi.
+    </footer>
+
+</body>
+</html>
