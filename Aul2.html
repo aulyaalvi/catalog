@@ -20,6 +20,14 @@
         nav {
             margin-top: 10px;
         }
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            padding: 0;
+            margin: 0.5rem 0;
+        }
         nav a {
             margin: 0 15px;
             color: white;
@@ -35,7 +43,7 @@
             margin: 0;
             font-size: 36px;
         }
-        .container {
+        .produk {
             padding: 30px 20px;
         }
         .product-grid {
@@ -65,17 +73,44 @@
             color: #777;
             font-size: 14px;
         }
+        .product .price {
+            color: #d81b60;
+            font-size: 1.1em;
+            margin: 10px 0;
+        }
         .product button {
-            background-color: #ff69b4;
-            color: white;
-            border: none;
-            padding: 10px 15px;
-            border-radius: 5px;
-            cursor: pointer;
-            margin-top: 10px;
+        background-color: #ec407a;
+        border: none;
+        color: white;
+        padding: 10px;
+        width: 100%;
+        border-radius: 5px;
+        cursor: pointer;
         }
         .product button:hover {
             background-color: #ff1493;
+        }
+        .cart ul {
+        list-style-type: none;
+        padding: 0;
+        }
+        .kontak {
+            background-color: #f59494;
+            padding: 50px 20px;
+            text-align: center;
+        }
+        .kontak h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+        .about {
+            background-color: #ffd4d4e7;
+            padding: 50px 20px;
+            text-align: center;
+        }
+        .about h1 {
+            margin: 0;
+            font-size: 36px;
         }
         footer {
             background-color: #ffe4e1;
@@ -98,10 +133,12 @@
         <h1>GlowBeauty</h1>
         <img src="logo.jpg" alt="Logo Toko" width="150mm" height="150mm">
         <nav>
-            <a href="#">Beranda</a>
-            <a href="#">Produk</a>
-            <a href="#">Tentang Kami</a>
-            <a href="#">Kontak</a>
+            <ul>
+              <li><a href="#beranda">Beranda</a></li>
+              <li><a href="#produk">Produk</a></li>
+              <li><a href="#keranjang">Keranjang</a></li>
+              <li><a href="#kontak">Kontak</a></li>
+            </ul>
         </nav>
     </header>
 
@@ -110,35 +147,53 @@
         <p>Makeup pilihan untuk tampil lebih percaya diri</p>
     </div>
 
-    <div class="container">
+    <section id="product">
         <h2 style="text-align:center;">Produk Terlaris</h2>
         <div class="product-grid">
             <div class="product">
                 <img src="lipstick.jpg" alt="Lipstick">
                 <h3>Glow Lipstick</h3>
                 <p>Warna tahan lama dan lembut di bibir.</p>
-                <button>Tambah ke Keranjang</button>
+                <p class="price">Rp90.000</p>
+                <button onclick="TambahkeKeranjang('Glow Lipstick', 90000)">Tambah ke Keranjang</button>
             </div>
             <div class="product">
                 <img src="fondation.png" alt="Foundation">
                 <h3>Silky Foundation</h3>
                 <p>Memberi tampilan halus dan natural.</p>
-                <button>Tambah ke Keranjang</button>
+                <p class="price">Rp200.000</p>
+                <button onclick="TambahkeKeranjang('Silky Foundation', 200000)">Tambah ke Keranjang</button>
             </div>
             <div class="product">
                 <img src="baked blush 2.jpg" alt="Blush">
                 <h3>Rosy Blush</h3>
                 <p>Warna pipi cerah alami sepanjang hari.</p>
-                <button>Tambah ke Keranjang</button>
+                <p class="price">Rp100.000</p>
+                <button onclick="TambahkeKeranjang('Rosy Blush', 100000)">Tambah ke Keranjang</button>
             </div>
             <div class="product">
                 <img src="eyeshadow.jpeg" alt="Eyeshadow">
                 <h3>Palette Eyeshadow</h3>
                 <p>Warna-warna cantik untuk berbagai gaya.</p>
-                <button>Tambah ke Keranjang</button>
+                <p class="price">Rp120.000</p>
+                <button onclick="TambahkeKeranjang('Palette Eyeshadow', 120000)">Tambah ke Keranjang</button>
             </div>
         </div>
     </div>
+
+
+    <div class="kontak">
+        <h2>Hubungi Kami</h2>
+            <p>instagram : GlowBeauty </p>
+            <p>Email: makeupwanita@email.com</p>
+            <p>Telepon: 08123456789</p>
+
+
+      <div class="about">
+        <h2>Tentang Kami</h2>
+        <p>Selamat datang di Glow Beauty, destinasi belanja online Anda untuk produk makeup dan kecantikan dengan sentuhan feminin dan elegan. </p>
+        <p>Kami hadir untuk memberikan pengalaman berbelanja yang menyenangkan dan mudah diakses, dengan koleksi makeup berkualitas.</p>
+        <p>Temukan koleksi lengkap kami dan rasakan sendiri kemudahan berbelanja makeup</p>
 
     <footer>
         &copy; 2025 GlowBeauty. Semua hak dilindungi.
