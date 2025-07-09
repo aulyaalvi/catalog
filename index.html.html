@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GlowBeauty - Toko Makeup</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>GlowBeauty</h1>
+        <img src="logo.jpg" alt="Logo Toko" width="150mm" height="150mm">
+        <nav>
+            <ul>
+              <li><a href="#beranda">Beranda</a></li>
+              <li><a href="#produk">Produk</a></li>
+              <li><a href="#keranjang">Keranjang</a></li>
+              <li><a href="#kontak">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="hero">
+        <h1>Temukan Kecantikanmu</h1>
+        <p>Makeup pilihan untuk tampil lebih percaya diri</p>
+    </div>
+
+    <section id="product">
+        <h2 style="text-align:center;">Produk Terlaris</h2>
+        <div class="product-grid">
+            <div class="product">
+                <img src="lipstick.jpg" alt="Lipstick">
+                <h3>Glow Lipstick</h3>
+                <p>Warna tahan lama dan lembut di bibir.</p>
+                <p class="price">Rp90.000</p>
+                <button onclick="TambahkeKeranjang('Glow Lipstick', 90000)">Tambah ke Keranjang</button>
+            </div>
+            <div class="product">
+                <img src="fondation.png" alt="Foundation">
+                <h3>Silky Foundation</h3>
+                <p>Memberi tampilan halus dan natural.</p>
+                <p class="price">Rp200.000</p>
+                <button onclick="TambahkeKeranjang('Silky Foundation', 200000)">Tambah ke Keranjang</button>
+            </div>
+            <div class="product">
+                <img src="baked blush 2.jpg" alt="Blush">
+                <h3>Rosy Blush</h3>
+                <p>Warna pipi cerah alami sepanjang hari.</p>
+                <p class="price">Rp100.000</p>
+                <button onclick="TambahkeKeranjang('Rosy Blush', 100000)">Tambah ke Keranjang</button>
+            </div>
+            <div class="product">
+                <img src="eyeshadow.jpeg" alt="Eyeshadow">
+                <h3>Palette Eyeshadow</h3>
+                <p>Warna-warna cantik untuk berbagai gaya.</p>
+                <p class="price">Rp120.000</p>
+                <button onclick="TambahkeKeranjang('Palette Eyeshadow', 120000)">Tambah ke Keranjang</button>
+            </div>
+        </div>
+    </section>
+
+    <div class="kontak">
+        <h2>Hubungi Kami</h2>
+        <p>instagram : GlowBeauty </p>
+        <p>Email: makeupwanita@email.com</p>
+        <p>Telepon: 08123456789</p>
+    </div>
+
+    <div class="about">
+        <h2>Tentang Kami</h2>
+        <p>Selamat datang di Glow Beauty, destinasi belanja online Anda untuk produk makeup dan kecantikan dengan sentuhan feminin dan elegan. </p>
+        <p>Kami hadir untuk memberikan pengalaman berbelanja yang menyenangkan dan mudah diakses, dengan koleksi makeup berkualitas.</p>
+        <p>Temukan koleksi lengkap kami dan rasakan sendiri kemudahan berbelanja makeup</p>
+    </div>
+
+    <footer>
+        &copy; 2025 GlowBeauty. Semua hak dilindungi.
+    </footer>
+
+</body>
+</html>
